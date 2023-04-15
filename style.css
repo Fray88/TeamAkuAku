@@ -35,6 +35,66 @@ body {
   line-height: 24px;
 }
 
+/******************************************/
+.social-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+
+}
+
+.social-poligon{
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 80px;
+  background-color: #ffd200;
+  color: black;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: .5s all ease;
+  cursor: pointer;
+  }
+
+.social-poligon i {
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+}
+
+.social-poligon:hover{
+  background: black;
+  color: #ffd200;
+}
+
+.teams-header{
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 90px;
+  background-color: #ffd200;
+}
+
+.teams-header > img {
+  position: absolute;
+  top: 30px;
+}
+
+.navbar .navbar-default .mu-main-navbar{
+  border: 1px solid green!important;
+}
+
+.tarjetas{
+  display: flex;
+}
+
+/******************************************/
+
+
+.fa-brands .fa-instagram{
+  border: 2px solid red;
+}
+
 .no-padding {
   padding: 0;
 }
