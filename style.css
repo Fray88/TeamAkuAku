@@ -7,25 +7,6 @@
 
 */
 
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER SECTION
-#NAVBAR SECTION
-#SLIDER SECTION
-#ABOUT US SECTION
-#COUNTER SECTION
-#MENU ITEM SECTION
-#RESERVATION SECTION
-#GALLERY SECTION
-#TESTIMONIAL SECTION
-#CHEF SECTION
-#CONTACT SECTION
-#MAP SECTION
-#FOOTER SECTION
-#RESPONSIVE DESIGN
-*/
-
 body {
   background-color: #000;
   font-family: "Montserrat", sans-serif;
@@ -170,6 +151,19 @@ img {
 =======================================================================
 */
 
+
+/*==================
+ GENERAL
+====================*/
+
+.mt-10r{
+  margin-top: 10rem;
+}
+
+.mt-15r{
+  margin-top: 15rem;
+}
+
 .guia{
   border: 1px solid red;
 }
@@ -177,7 +171,6 @@ img {
 .guiav{
   border: 1px solid green;
 }
-
 /*==================
  TITLE SECTIONS
 ====================*/
@@ -194,6 +187,7 @@ img {
 }
 
 .section-title > .title {
+  margin-bottom: 5rem;
   font-size: 5rem;
   color: #ffd200;
 }
@@ -272,11 +266,9 @@ img {
   border: 1px solid green !important;
 }
 
-.tarjetas {
-  display: flex;
-}
-
-/************** ROSTER CARDS ******************/
+/*==================
+ ROSTER CARDS SECTION
+====================*/
 
 .main-container {
   margin-top: 5rem;
@@ -327,13 +319,14 @@ img {
   transform: translateY(-3px);
 }
 
-/*****************************************/
 
-/********** Footer webpage ***************/
+/*==================
+ FOOTER SECTION
+====================*/
 
 .footer {
-  margin: 2rem 0;
   padding: 5rem 0;
+  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -378,14 +371,16 @@ img {
   }
 }
 
-/*****************************************/
 
-/*
-=======================================================================
-=======================================================================
-=======================================================================
-=======================================================================
-*/
+/*==================
+ GAMES SECTIONS
+====================*/
+
+.game-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
 
 .no-padding {
   padding: 0;
@@ -400,11 +395,6 @@ img {
   color: #000;
   font-weight: bold;
 }
-
-
-/*==================
-	ABOUT US SECTION
-====================*/
 
 
 /*==================

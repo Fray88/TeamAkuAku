@@ -9,53 +9,11 @@ Bootstrap :
 	License : The MIT License
 	License URL : https://github.com/twbs/bootstrap/blob/master/LICENSE
 
-HTML5 Shiv :
-	Website URL : https://github.com/aFarkas/html5shiv
-	License : The MIT License
-	License URL : https://github.com/aFarkas/html5shiv/blob/master/MIT%20and%20GPL2%20licenses.md
-
-
-Typed SLider :
-	Website URL : http://www.mattboldt.com/demos/typed-js/
-	License : The MIT License 
-	License URL : https://github.com/mattboldt/typed.js/blob/master/LICENSE.txt
-
-Slick SLider :
-	Website URL : http://kenwheeler.github.io/slick/
-	License : The MIT License 
-	License URL : https://github.com/kenwheeler/slick/blob/master/LICENSE
-
-Ajax Contact Form :
-	Website URL : https://github.com/matt-west/ajax-contact-form
-	License : MIT 
-	License URL : https://github.com/matt-west/ajax-contact-form/blob/master/LICENSE.txt
-
 
 Font Awesome :
 	Website URL : http://fortawesome.github.io/Font-Awesome/
 	License : MIT 
 	License URL : http://fortawesome.github.io/Font-Awesome/license/
-
-
-Magnific Popup (Light Box) :
-	Website URL : http://dimsemenov.com/plugins/magnific-popup/
-	License : MIT 
-	License URL : https://github.com/dimsemenov/Magnific-Popup/blob/master/LICENSE
-
-Date Picker :
-	Website URL : https://github.com/eternicode/bootstrap-datepicker
-	License     : Apache License
-	License URL : http://www.apache.org/licenses/
-
-Simple Animated Counter :
-	Website URL : https://codepen.io/dmcreis/pen/VLLYPo
-	License : MIT 
-	License URL : https://opensource.org/licenses/MIT
-
-
-
-
-
 
 Google Fonts : 
 
