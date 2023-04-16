@@ -77,7 +77,7 @@ body {
 
 .teams-header > img {
   position: absolute;
-  top: 30px;
+  top: 26px;
 }
 
 .navbar .navbar-default .mu-main-navbar{
@@ -1326,7 +1326,7 @@ RESERVATION SECTION
 
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover, 
 .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus {
-  color: #fff;
+  color: #000;
 }
 
 .mu-chef-nav .slick-dots {
@@ -1668,21 +1668,22 @@ RESERVATION SECTION
 
   .navbar-default .navbar-toggle {
     border-radius: 0px;
+    border-color: #ffd200;
   }
 
   .navbar-default .navbar-toggle:hover, 
   .navbar-default .navbar-toggle:focus {
-    background-color: #fff;
+    background-color: #000;
   }
 
   .mu-main-navbar .mu-main-nav {
-    background-color: #fff;
+    background-color: #ffd200;
     text-align: center;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #fff;
+    background-color: #000;
   }
 
   #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
@@ -1698,7 +1699,7 @@ RESERVATION SECTION
   
   .navbar-default .navbar-toggle:hover, 
   .navbar-default .navbar-toggle:focus {
-    background-color: #fff;
+    background-color: #000;
   }
 
   #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
