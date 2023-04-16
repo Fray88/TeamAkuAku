@@ -201,6 +201,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  text-align: justify;
 }
 
 .section-about .col-md-6 p {
