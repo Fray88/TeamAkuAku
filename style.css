@@ -151,6 +151,18 @@ img {
 =======================================================================
 */
 
+/*==================
+ FONDO
+====================*/
+
+.fondo{
+  background-image: url(/assets/img/fondo.png);
+  background-position: left;
+  background-repeat: repeat-y;
+  background-size: flex;
+  flex: auto;
+}
+
 
 /*==================
  GENERAL
