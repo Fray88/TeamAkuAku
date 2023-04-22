@@ -1,0 +1,38 @@
+:root {
+  --yellow-color: #ffd200;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+.contact-title {
+  margin: 8rem;
+}
+
+.form-horizontal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+label {
+  color: var(--yellow-color);
+}
+
+input,
+textarea {
+  padding: 1rem;
+  min-height: 40px;
+  text-align: center;
+  background-color: var(--black-color) !important;
+  color: var(--white-color) !important;
+}
+
+input:focus,
+textarea:focus {
+  transition: 0.5s all ease;
+  border: 1px solid var(--yellow-color) !important;
+  background-color: var(--white-color) !important;
+  color: var(--black-color) !important;
+}
