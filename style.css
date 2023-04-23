@@ -25,6 +25,29 @@
 */
 
 /*==================
+ FONTS
+====================*/
+@font-face {
+  font-family: "mont";
+  src: url("/assets/fonts/Mont-ExtraLightDEMO.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "mont-heavy";
+  src: url("/assets/fonts/Mont-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "hanson";
+  src: url("/assets/fonts/Hanson-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("/assets/fonts/Montserrat-SemiBold.otf") format("truetype");
+}
+
+/*==================
  GENERAL
 ====================*/
 
@@ -34,7 +57,7 @@
   --black-color: #000000;
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
@@ -42,7 +65,7 @@ body {
   background-color: #000;
   background-image: url(assets/img/fondoOK.png);
   background-repeat: repeat-y;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat";
   color: var(--white-color);
   font-size: 15px;
   overflow-x: hidden;
@@ -104,105 +127,77 @@ img {
 .section-title > .title {
   margin-bottom: 1rem;
   font-size: 4rem;
+  font-family: "hanson";
   color: var(--white-color);
+  letter-spacing: 1px;
 }
 
 .section-title > .subtitle {
   font-size: 2rem;
   color: var(--yellow-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont";
+  letter-spacing: 1px;
 }
 
 /*==================
  HEADER SECTION
 ====================*/
 
-#mu-header {
-  background-color: var(--yellow-color);
-  border-bottom: 1px solid #000;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
+.main-header .container {
+  height: 100px;
   width: 100%;
-  z-index: 999;
+  padding: 1rem 3rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--yellow-color);
+  position: fixed;
+  z-index: 10;
 }
 
 /*==================
  NAVBAR SECTION
 ====================*/
-.mu-main-navbar {
-  background-color: transparent;
-  border: none;
-  padding: 20px 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
 
-.mu-main-navbar .mu-main-nav {
-  font-family: "Montserrat", sans-serif;
-}
-
-.mu-main-navbar .mu-main-nav li a {
-  color: #000;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.mu-main-navbar .mu-main-nav .dropdown-menu {
-  background-color: #000;
-  border-radius: 0;
-}
-
-.mu-main-navbar .mu-main-nav .dropdown-menu li a {
-  padding: 10px 20px;
-}
-
-.mu-main-navbar .navbar-header .navbar-brand {
-  color: #000;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 35px;
-  padding: 0;
-  margin-top: 16px;
-  height: 34px;
-  width: 180px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.mu-main-navbar .navbar-header .navbar-brand img {
+.navbar-logo {
   position: relative;
-  top: -10px;
-  right: 40px;
-  z-index: 2;
+  height: 50px;
+  right: 100px;
+  top: 14px;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand-small {
-  height: 20px;
-  margin-top: 16px;
-  width: 105px;
+.burguer-button {
+  display: none;
+  cursor: pointer;
 }
 
-.mu-main-navbar .navbar-header .navbar-brand-small span {
-  margin-top: -4px;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.main-nav {
   background-color: transparent;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-nav-list-item a {
+  margin: 0 0.5rem;
+  font-family: 'montserrat';
+  color: #4b4b4baf;
+  font-size: 1.4rem;
+}
+
+.main-nav-list-item:hover a {
+  transition: 0.4s all ease;
+  font-weight: bold;
+  color: var(--black-color);
 }
 
 /*==================
@@ -270,13 +265,24 @@ img {
   text-align: center;
 }
 
-.staff-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+.staff-section-title {
+  font-family: "mont-heavy";
 }
-.staff-name {
+
+.staff-section-subtitle {
+  font-family: "mont";
   color: var(--yellow-color);
 }
+.staff-title {
+  font-size: 1.5rem;
+  font-family: "hanson";
+}
+
+.staff-name {
+  font-family: "montserrat";
+  color: var(--yellow-color);
+}
+
 .staff-social a i {
   margin: 0 0.5rem;
   color: var(--white-color);
@@ -302,11 +308,12 @@ img {
 
 .sponsors-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "hanson";
   color: var(--yellow-color);
 }
 
 .sponsors-subtitle {
+  font-family: "montserrat";
   font-size: 1.2rem;
   color: var(--white-color);
 }
@@ -334,7 +341,7 @@ img {
   color: var(--black-color);
   background-color: var(--yellow-color);
   transition: all 1000ms;
-  font-size: 10px;
+  font-size: 12px;
   position: relative;
   overflow: hidden;
   outline: 2px solid var(--yellow-color);
@@ -489,15 +496,17 @@ img {
 ====================*/
 
 .teams-header {
-  position: relative;
+  width: 100%;
   display: grid;
   place-items: center;
+  position: fixed;
   height: 90px;
   background-color: var(--yellow-color);
+  z-index: 5;
 }
 
-.teams-header > img {
-  position: absolute;
+.teams-header > a > img {
+  position: relative;
   top: 26px;
 }
 
@@ -544,74 +553,96 @@ img {
  RESPONSIVE DESIGN
 ====================*/
 
-@media (max-width: 1199px) {
-  .mu-main-navbar .mu-main-nav li a {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 @media (max-width: 1024px) {
   body {
     background-image: none;
   }
 }
 
-@media (max-width: 991px) {
-  .mu-main-navbar .mu-main-nav li a {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 14px;
+@media (max-width: 994px) {
+  .main-header .container {
+    height: auto;
+  }
+
+  .navbar-logo {
+    top: 0;
+  }
+
+  .main-nav {
+    width: 100%;
+    height: 0;
+    transition: all 0.5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .main-nav.activo {
+    height: 350px;
+    pointer-events: auto;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .burguer-button {
+    display: block;
+    position: relative;
+    padding: 2rem;
+  }
+
+  .line {
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: var(--black-color);
+    border-radius: 3px;
+    transition: transform 0.25s, opacity 0.35s;
+  }
+
+  .top-line {
+    transform: translateY(-7px);
+  }
+
+  .bottom-line {
+    transform: translateY(7px);
+  }
+
+  .active-top-line {
+    transform: rotate(45deg);
+    background-color: #d80000;
+  }
+
+  .active-middle-line {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  .active-bottom-line {
+    transform: rotate(-45deg);
+    background-color: #d80000;
   }
 }
 
-@media (max-width: 767px) {
-  #mu-header {
-    padding: 0 15px;
-  }
-
-  .navbar-default .navbar-toggle {
-    border-radius: 0px;
-    border-color: var(--yellow-color);
-  }
-
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    background-color: var(--yellow-color);
-  }
-
-  .mu-main-navbar .mu-main-nav {
-    background-color: var(--yellow-color);
-    text-align: center;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-color: #000;
-  }
-
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-right: none;
+@media (max-width: 1024px) {
+  .navbar-logo {
+    right: 70px;
   }
 }
 
-@media (max-width: 640px) {
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    background-color: var(--yellow-color);
+@media (max-width: 820px) {
+  .navbar-logo {
+    right: 250px;
   }
 }
 
 @media (max-width: 480px) {
-  .mu-title {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 360px) {
-  .mu-menu-item-nav li {
-    text-align: center;
+  .navbar-logo {
+    right: 100px;
   }
 }

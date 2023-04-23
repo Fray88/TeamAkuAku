@@ -25,42 +25,41 @@
 
   <!-- Main style sheet -->
   <link href="style.css" rel="stylesheet">
+
+  <script defer src="/assets/js/script.js"></script>
+
 </head>
 
 <body>
 
-  <!-- Start header section -->
-  <header id="mu-header">
-    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <!-- SECTION HEADER NAVBAR -->
+  <header class="main-header">
+    <div class="container">
+      <a class="navbar-logo" href="index.html">
+        <img src="assets/img/logo2.png" alt="Logo del equipo">
+      </a>
 
-          <!--  Image based logo  -->
-          <a class="navbar-brand" href="index.html"><img src="assets/img/logo2.png" alt="Logo img"></a>
+      <!-- BURGUER BUTTON -->
+      <span class="burguer-button" id="burguer-button">
+        <span class="line top-line"></span>
+        <span class="line middle-line"></span>
+        <span class="line bottom-line"></span>
+      </span>
+      <!-- END BURGUER BUTTON -->
 
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#sponsors">SPONSORS</a></li>
-            <li><a href="#teams">EQUIPOS</a></li>
-            <li><a href="#creators">CREADORES</a></li>
-            <li><a href="#store">TIENDA</a></li>
-            <li><a href="/pages/contacto.html"><i class="fa-regular fa-envelope"></i></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      <nav class="main-nav" id="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-list-item"><a href="#about">ABOUT</a></li>
+          <li class="main-nav-list-item"><a href="#sponsors">SPONSORS</a></li>
+          <li class="main-nav-list-item"><a href="#teams">EQUIPOS</a></li>
+          <li class="main-nav-list-item"><a href="#creators">CREADORES</a></li>
+          <li class="main-nav-list-item"><a href="#store">TIENDA</a></li>
+          <li class="main-nav-list-item"><a href="/pages/contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <!-- End header section -->
+  <!-- END HEADER NAVBAR SECTION -->
 
   <!-- Header logos -->
   <section class="container section-container">
@@ -148,8 +147,8 @@
         <div class="col-md-12">
 
           <div class="section-title">
-            <h1 class="title">TEAM AKU AKU</h1>
-            <h2 class="subtitle">EQUIPO TÉCNICO</h2>
+            <h1 class="staff-section-title">TEAM AKU AKU</h1>
+            <h2 class="staff-section-subtitle">STAFF</h2>
           </div>
 
           <div class="staff-info-container">
@@ -171,7 +170,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <h1 class="staff-title">Diseñador gráfico</h1>
+              <h1 class="staff-title">DISEÑADOR GRÁFICO</h1>
               <p class="staff-name">Ouadih</p>
               <div class="staff-social">
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -200,20 +199,23 @@
             <div class="col-md-4 sponsors-card">
               <i class="fa-brands fa-xbox temporal-logo"></i>
               <p class="sponsors-title">PATROCINADOR OFICIAL HARDWARE</p>
-              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam error tempora magni earum veniam.</p>
-                <a href=""><button class="sponsors-button">Web oficial</button></a>
+              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam
+                error tempora magni earum veniam.</p>
+              <a href=""><button class="sponsors-button">Web oficial</button></a>
             </div>
             <div class="col-md-4 sponsors-card">
               <i class="fa-brands fa-steam temporal-logo"></i>
               <p class="sponsors-title">PATROCINADOR OFICIAL SOFTWARE</p>
-              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam error tempora magni earum veniam.</p>
-                <a href=""><button class="sponsors-button">Web oficial</button></a>
+              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam
+                error tempora magni earum veniam.</p>
+              <a href=""><button class="sponsors-button">Web oficial</button></a>
             </div>
             <div class="col-md-4 sponsors-card">
               <i class="fa-brands fa-playstation temporal-logo"></i>
               <p class="sponsors-title">PATROCINADOR OFICIAL HARDWARE</p>
-              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam error tempora magni earum veniam.</p>
-                <a href=""><button class="sponsors-button">Web oficial</button></a>
+              <p class="sponsors-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia numquam
+                error tempora magni earum veniam.</p>
+              <a href=""><button class="sponsors-button">Web oficial</button></a>
             </div>
           </div>
         </div>
@@ -236,16 +238,20 @@
           </div>
 
           <div class="col-md-3">
-            <a href="/pages/valorant.html"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_valorant.png" alt="Tarjeta con imagen valorant"></a>
+            <a href="/pages/valorant.html"><img class="team-game-card"
+                src="/assets/img/team-akuaku/cards/Tarjeta_valorant.png" alt="Tarjeta con imagen valorant"></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_LOL.png" alt="Tarjeta con imagen league of legends"></a>
+            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_LOL.png"
+                alt="Tarjeta con imagen league of legends"></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_fifa.png" alt="Tarjeta con imagen fifa"></a>
+            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_fifa.png"
+                alt="Tarjeta con imagen fifa"></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_rocket.png" alt="Tarjeta con imagen rocket league"></a>
+            <a href="#"><img class="team-game-card" src="/assets/img/team-akuaku/cards/Tarjeta_rocket.png"
+                alt="Tarjeta con imagen rocket league"></a>
           </div>
 
         </div>
@@ -377,13 +383,6 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-
-  <!-- jQuery library -->
-  <script src="assets/js/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>
-  <!-- Custom js -->
-  <script src="assets/js/custom.js"></script>
 
 </body>
 
