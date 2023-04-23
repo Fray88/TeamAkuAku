@@ -7,7 +7,7 @@
   <title>Team Aku Aku | Contacto</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
 
   <!-- Bootstrap -->
   <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -47,21 +47,23 @@
 
             <div class="col-sm-6">
               <label for="name" class="form-label">Nombre</label>
-              <input class="form-control" id="name" name="name" type="text" autocomplete="off">
+              <input class="form-control text-left" id="name" name="name" type="text" autocomplete="off">
             </div>
 
             <div class="col-sm-6">
               <label for="email" class="form-label">Email</label>
-              <input class="form-control" id="email" name="email" type="text" autocomplete="off">
+              <input class="form-control text-left" id="email" name="email" type="text" autocomplete="off">
             </div>
 
             <div class="col-sm-6">
               <label for="message" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="message" name="message" rows="8"></textarea>
+              <textarea class="form-control text-left" id="message" name="message" rows="8"></textarea>
             </div>
 
             <!-- Form actions -->
             <button type="submit" class="sponsors-button">Enviar</button>
+            <input type="hidden" name="_next" value="/pages/thanks.html">
+            <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
       </div>
