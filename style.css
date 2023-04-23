@@ -196,7 +196,6 @@ img {
 
 .main-nav-list-item:hover a {
   transition: 0.4s all ease;
-  font-weight: bold;
   color: var(--black-color);
 }
 
