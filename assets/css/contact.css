@@ -5,8 +5,7 @@
 }
 
 .contact-title {
-  margin: 8rem;
-  margin-top: 150px;
+  margin-bottom: 8rem;
 }
 
 .form-horizontal {
@@ -25,7 +24,6 @@ input,
 textarea {
   padding: 1rem;
   min-height: 40px;
-  text-align: center;
   background-color: var(--black-color) !important;
   color: var(--white-color) !important;
 }
