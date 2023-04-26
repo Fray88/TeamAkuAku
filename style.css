@@ -283,7 +283,7 @@ img {
   color: var(--yellow-color);
 }
 .staff-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: "hanson";
 }
 
@@ -479,6 +479,11 @@ img {
 
 .footer-copyright {
   text-align: center;
+  border-left: 2px solid #ffd200;
+}
+
+.footer-copyright p {
+  margin-left: 2rem;
 }
 
 .footer-copyright p a {
@@ -592,6 +597,10 @@ img {
   .main-header .container {
     height: auto;
   }
+
+  .footer-copyright {
+    border-left: 0;
+ }
 
   .navbar-logo {
     top: 0;
