@@ -1,13 +1,4 @@
 /*
-  Template Name: OsteriaX
-  Author : MarkUps
-  Author URI: http://www.markups.io/
-  Version: 1.0
-  Tags: light, white, restaurant, multi page, landing page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
-
-*/
-
-/*
 #### SECTION INDEX ####
 
 #0 GENERAL SETTINGS
@@ -67,7 +58,7 @@ body {
   background-repeat: repeat-y;
   font-family: "Montserrat";
   color: var(--white-color);
-  font-size: 15px;
+  font-size: 16px;
   overflow-x: hidden;
   line-height: 24px;
 }
@@ -206,6 +197,7 @@ img {
 
 .main-nav-list-item:hover a {
   transition: 0.4s all ease;
+
   color: var(--black-color);
 }
 
@@ -360,7 +352,7 @@ img {
   color: #ffffff;
   transform: scale(1.05);
   outline: 2px solid var(--yellow-color);
-  box-shadow: 4px 5px 17px -4px #ffd000;
+  box-shadow: 4px 5px 17px -4px #ffd200;
 }
 
 .sponsors-button::before {
@@ -653,7 +645,7 @@ img {
 
   .active-top-line {
     transform: rotate(45deg);
-    background-color: #d80000;
+    background-color: #000000;
   }
 
   .active-middle-line {
@@ -663,7 +655,7 @@ img {
 
   .active-bottom-line {
     transform: rotate(-45deg);
-    background-color: #d80000;
+    background-color: #000000;
   }
 }
 
