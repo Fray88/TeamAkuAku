@@ -298,8 +298,14 @@ img {
 ====================*/
 
 .sponsors-info-container {
+  display: flex;
   margin-top: 3rem;
   text-align: center;
+}
+
+.sponsors-card{
+  display: flex;
+  flex-direction: column;
 }
 
 .temporal-logo {
@@ -314,6 +320,7 @@ img {
 }
 
 .sponsors-subtitle {
+  flex-grow: 1;
   font-family: "montserrat";
   font-size: 1.3rem;
   color: var(--white-color);
