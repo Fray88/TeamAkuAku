@@ -107,7 +107,6 @@ img {
   margin-top: 15rem;
 }
 
-
 /*==================
  TITLE OF SECTIONS
 ====================*/
@@ -136,7 +135,7 @@ img {
   color: var(--yellow-color);
 }
 
-.margin-section-top{
+.margin-section-top {
   margin-top: 200px;
 }
 
@@ -190,7 +189,7 @@ img {
 
 .main-nav-list-item a {
   margin: 0 0.5rem;
-  font-family: 'montserrat-semibold';
+  font-family: "montserrat-semibold";
   color: #4b4b4baf;
   font-size: 1.4rem;
 }
@@ -250,10 +249,14 @@ img {
   display: grid;
   place-items: center;
   font-size: 3.5rem;
+  color: var(--black-color);
 }
 
 .social-network-icon-background:hover {
   background: black;
+  color: var(--yellow-color);
+}
+.social-network-icon-background:hover > a > i {
   color: var(--yellow-color);
 }
 
@@ -262,8 +265,15 @@ img {
 ====================*/
 
 .staff-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 3rem;
   text-align: center;
+}
+
+.staff-member-container {
+  margin-top: 5rem;
 }
 
 .staff-section-title {
@@ -299,11 +309,13 @@ img {
 
 .sponsors-info-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 3rem;
   text-align: center;
 }
 
-.sponsors-card{
+.sponsors-card {
   display: flex;
   flex-direction: column;
 }
@@ -397,6 +409,10 @@ img {
   margin-top: 5rem;
 }
 
+.roster-section-title{
+  line-height: 3rem;
+}
+
 .roster-cards-container {
   display: flex;
   justify-content: space-evenly;
@@ -439,17 +455,46 @@ img {
   transform: translateY(-3px);
 }
 
+.roster-trophys-container:first-of-type{
+  margin-top: 4rem;
+}
+
+
+.roster-trophys-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.roster-trophys-container p{
+  text-transform: uppercase;
+}
+
+.gold-trophy {
+  color: #ffd95a;
+}
+
+.silver-trophy {
+  color: #f0eeed;
+}
+
+.bronze-trophy {
+  color: #c07f00;
+}
+
 /*==================
   TEAM GAME SECTION
 ====================*/
 
+.game-card-container {
+  display: flex;
+  justify-content: center;
+}
+
 .team-game-card {
   cursor: pointer;
-  filter: grayscale(80%);
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
 }
 
 .team-game-card:hover {
@@ -566,7 +611,7 @@ img {
  THANKS PAGE
 ====================*/
 
-.thanks-container{
+.thanks-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -577,10 +622,17 @@ img {
 /*==================
  CONTACT PAGE
 ====================*/
-.space-form{
+.space-form {
   height: 40px;
 }
 
+/*==================
+ PRIVACY PAGE
+====================*/
+
+.privacy-container {
+  text-align: justify;
+}
 
 /*==================
  RESPONSIVE DESIGN
@@ -599,7 +651,7 @@ img {
 
   .footer-copyright {
     border-left: 0;
- }
+  }
 
   .navbar-logo {
     top: 0;
