@@ -635,6 +635,25 @@ img {
 }
 
 /*==================
+ MARGIN TOP
+====================*/
+
+.margin-top {
+margin-top: 5rem;
+}
+
+/*==================
+ ANCLA
+====================*/
+
+:target::before {
+  content: "";
+  display: block;
+  height: 120px; /* aquí la altura de la cabecera fija*/
+  margin: -120px 0 0; /* altura negativa de la cabecera fija */
+}
+
+/*==================
  RESPONSIVE DESIGN
 ====================*/
 
