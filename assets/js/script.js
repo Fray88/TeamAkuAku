@@ -15,7 +15,6 @@ burguerButton.addEventListener("click", () => {
 });
 
 navButton.forEach((button) => {
-  console.log(button);
   button.addEventListener("click", () => {
     nav.classList.toggle("activo");
     topLineBurguer.classList.toggle("active-top-line");
