@@ -15,8 +15,11 @@ burguerButton.addEventListener("click", () => {
 });
 
 navButton.forEach((button) => {
-  console.log(button)
+  console.log(button);
   button.addEventListener("click", () => {
     nav.classList.toggle("activo");
+    topLineBurguer.classList.toggle("active-top-line");
+    middleLineBurguer.classList.toggle("active-middle-line");
+    bottomLineBurguer.classList.toggle("active-bottom-line");
   });
 });
