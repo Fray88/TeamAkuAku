@@ -409,7 +409,7 @@ img {
   margin-top: 5rem;
 }
 
-.roster-section-title{
+.roster-section-title {
   line-height: 3rem;
 }
 
@@ -455,18 +455,17 @@ img {
   transform: translateY(-3px);
 }
 
-.roster-trophys-container:first-of-type{
+.roster-trophys-container:first-of-type {
   margin-top: 4rem;
 }
 
-
-.roster-trophys-container{
+.roster-trophys-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.roster-trophys-container p{
+.roster-trophys-container p {
   text-transform: uppercase;
 }
 
@@ -513,7 +512,7 @@ img {
 
 .footer {
   background-color: #000;
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
   margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
@@ -547,6 +546,25 @@ img {
 
 .img-footer-container > img {
   margin: 4rem 0;
+}
+
+.develop-by {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-color);
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.develop-by a {
+  font-size: 1.1rem;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.develop-by a:hover {
+  color: var(--yellow-color);
 }
 
 /*==================
@@ -631,7 +649,51 @@ img {
 ====================*/
 
 .privacy-container {
+  margin-top: 10rem;
   text-align: justify;
+  line-height: 3rem;
+}
+
+.privacy-container a{
+  color: var(--white-color);
+  transition: .3s all ease;
+}
+
+.privacy-container a:hover{
+  color: var(--yellow-color);
+}
+
+.privacy-text-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.privacy-text-container i {
+  color: var(--yellow-color);
+  margin: 2rem 0;
+}
+
+.privacy-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--yellow-color);
+  margin: 0;
+}
+
+.privacy-list {
+  padding: .5rem 0 2rem 0;
+}
+
+.privacy-list li {
+  list-style: none;
+  
+}
+
+.privacy-list li i {
+  color: var(--yellow-color);
+  margin-right: 1rem;
+  
 }
 
 /*==================
@@ -639,7 +701,7 @@ img {
 ====================*/
 
 .margin-top {
-margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 /*==================
@@ -649,8 +711,8 @@ margin-top: 5rem;
 :target::before {
   content: "";
   display: block;
-  height: 120px; /* aquí la altura de la cabecera fija*/
-  margin: -120px 0 0; /* altura negativa de la cabecera fija */
+  height: 120px;
+  margin: -120px 0 0;
 }
 
 /*==================
@@ -752,5 +814,14 @@ margin-top: 5rem;
 @media (max-width: 480px) {
   .navbar-logo {
     right: 100px;
+  }
+
+  .social-network-icon-background {
+    width: 60px;
+    height: 70px;
+  }
+
+  .social-network-icon-background i {
+    font-size: 3rem;
   }
 }
