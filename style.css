@@ -512,7 +512,7 @@ img {
 
 .footer {
   background-color: #000;
-  padding: 5rem 0 3rem 0;
+  padding: 5rem 0 1rem 0;
   margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
@@ -553,13 +553,17 @@ img {
   justify-content: center;
   background-color: var(--black-color);
   margin: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
   font-size: 1.1rem;
+}
+.develop-by span {
+  margin: 0 .5rem ;
 }
 
 .develop-by a {
   font-size: 1.1rem;
-  color: var(--white-color);
+  color: var(--yellow-color);
+  font-weight: bold;
   cursor: pointer;
   transition: 0.5s all ease;
 }
