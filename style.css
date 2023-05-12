@@ -2,7 +2,7 @@
 #### SECTION INDEX ####
 
 #0 GENERAL SETTINGS
-#1 TITLES OF SECTIONS
+#1 TITLES OF SECTIONSSECTION
 #2 HEADER SECTION
 #3 NAVBAR SECTION
 #4 ABOUT SECTION
@@ -20,22 +20,22 @@
 ====================*/
 @font-face {
   font-family: "mont";
-  src: url("/assets/fonts/Mont-ExtraLightDEMO.otf") format("truetype");
+  src: url("assets/fonts/Mont-ExtraLightDEMO.otf") format("truetype");
 }
 
 @font-face {
   font-family: "mont-heavy";
-  src: url("/assets/fonts/Mont-Heavy.ttf") format("truetype");
+  src: url("assets/fonts/Mont-Heavy.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "hanson";
-  src: url("/assets/fonts/Hanson-Bold.otf") format("truetype");
+  src: url("assets/fonts/Hanson-Bold.otf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-semibold";
-  src: url("/assets/fonts/Montserrat-SemiBold.otf") format("truetype");
+  src: url("assets/fonts/Montserrat-SemiBold.otf") format("truetype");
 }
 
 /*==================
@@ -554,6 +554,7 @@ img {
   background-color: var(--black-color);
   margin: 0;
   padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .develop-by a {
@@ -824,4 +825,13 @@ img {
   .social-network-icon-background i {
     font-size: 3rem;
   }
+
+  .section-title .title {
+    font-size: 2.7rem;
+  }
+    
+  .section-title .subtitle {
+    font-size: 2rem;
+  }
 }
+
