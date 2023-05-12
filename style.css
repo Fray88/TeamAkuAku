@@ -556,11 +556,13 @@ img {
   padding-bottom: 1.5rem;
   font-size: 1.1rem;
 }
+
 .develop-by span {
-  margin: 0 .5rem ;
+  margin: 0 0.5rem;
 }
 
 .develop-by a {
+  position: relative;
   font-size: 1.1rem;
   color: var(--yellow-color);
   font-weight: bold;
@@ -569,6 +571,7 @@ img {
 }
 
 .develop-by a:hover {
+  transform: translateY(-3px);
   color: var(--yellow-color);
 }
 
@@ -659,12 +662,12 @@ img {
   line-height: 3rem;
 }
 
-.privacy-container a{
+.privacy-container a {
   color: var(--white-color);
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 
-.privacy-container a:hover{
+.privacy-container a:hover {
   color: var(--yellow-color);
 }
 
@@ -687,18 +690,16 @@ img {
 }
 
 .privacy-list {
-  padding: .5rem 0 2rem 0;
+  padding: 0.5rem 0 2rem 0;
 }
 
 .privacy-list li {
   list-style: none;
-  
 }
 
 .privacy-list li i {
   color: var(--yellow-color);
   margin-right: 1rem;
-  
 }
 
 /*==================
@@ -833,9 +834,8 @@ img {
   .section-title .title {
     font-size: 2.7rem;
   }
-    
+
   .section-title .subtitle {
     font-size: 2rem;
   }
 }
-
