@@ -722,14 +722,30 @@ img {
 }
 
 /*==================
- TWITTER TIMELINE
+ TWITTER BOX
 ====================*/
 .twitter-box {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/*==================
+LNK.BIO
+====================*/
+
+.lnkbio {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+  letter-spacing: 1px;
+}
+
+.lnkbio a:hover {
+  color: var(--yellow-color);
 }
 
 
