@@ -722,6 +722,18 @@ img {
 }
 
 /*==================
+ TWITTER TIMELINE
+====================*/
+.twitter-box {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*==================
  RESPONSIVE DESIGN
 ====================*/
 
